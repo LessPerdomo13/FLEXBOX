@@ -1,0 +1,71 @@
+body{
+  width: 100%;
+}
+header{
+  background-color: #2DA8EF;
+  font-family: cursive;
+  display: flex;
+  flex-direction: row;
+}
+.conteiner{
+  width: 100%;
+  height: 400px;
+  background-color: #F1948A;
+  display:flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.opciones{
+  width: 70%;
+  display:flex;
+  color: white;
+  justify-content: space-around;
+  align-items: flex-end;
+}
+.logotitulo{
+  width: 30%;
+  display:flex;
+  justify-content: center;
+}
+.botones{
+  width: 100%;
+  height: 100px;
+  background-color: #2DA8EF;
+  display:flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.boton{
+  width: 100px;
+  height: 50px;
+  background-color: #FF79B2;
+  font-family: fantasy;
+  font-size: 100%;
+
+}
+p{
+  width: 500px;
+  height: 600px;
+  font-size: 120%;
+  font-family: sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer{
+  width: 100%;
+  height: 400px;
+  background-color: #F1948A;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.imagen{
+  width: 50%;
+  height: 300px;
+}
