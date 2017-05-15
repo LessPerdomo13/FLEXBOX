@@ -1,60 +1,81 @@
 <!DOCTYPE html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
   <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="css/style.css">
-    <title>FLEXBOX</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Bootstrap 101 Template</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
   </head>
   <body>
     <header class="">
       <section class="logotitulo">
-        <h1>PANDAS</h1>
+        <h1  class="text-muted">PANDAS</h1>
       </section class="conteiner">
       <nav class="opciones">
-        <a href="file:///C:/Users/Alumna4G/Desktop/Leslie/sprint%204/Flexbox/Ejercicio%20Pandaaa/index.html#">Inicio</a>
-        <a href="https://es.wikipedia.org/wiki/Ailuropoda_melanoleuca#El_panda_y_los_creacionistas">Pandas</a>
-        <a href="https://es.wikipedia.org/wiki/Ailuropoda_melanoleuca#Historia">Historia</a>
-        <a href="https://es.wikipedia.org/wiki/Ailuropoda_melanoleuca#Estado_de_conservaci.C3.B3n">Extincion</a>
-      </nav>
+        <nav>
+          <ul class="nav nav-pills pull-right opciones">
+            <li role="presentation" class="active"><a href="file:///C:/Users/Alumna4G/Desktop/Leslie/sprint%204/Flexbox/Ejercicio%20Pandaaa/index.html">Inicio</a></li>
+            <li role="presentation" class="active"><a href="https://es.wikipedia.org/wiki/Ailuropoda_melanoleuca#El_panda_y_los_creacionistas">Pandas</a></li>
+            <li role="presentation" class="active"><a href="https://es.wikipedia.org/wiki/Ailuropoda_melanoleuca#Historia">historia</a></li>
+            <li role="presentation" class="active"><a href="https://es.wikipedia.org/wiki/Ailuropoda_melanoleuca#Estado_de_conservaci.C3.B3n">Extincion</a></li>
+          </ul>
+        </nav>
     </header>
-    <section class="conteiner">
-      <div class="">
-        <span>&times;</span>
-        <img src="images/panda1.jpg" alt="">
+    <section class="conteiner row">
+      <div class="xImagen col-xs-2 thumbnail">
+        <span class="cerrar">&times;</span>
+        <img src="images/panda1.jpg" class="imagenes">
       </div>
-      <div class="">
-        <span>&times;</span>
-        <img src="images/panda2.jpg" alt="">
+      <div class="xImagen col-xs-2 thumbnail">
+        <span class="cerrar">&times;</span>
+        <img src="images/panda2.jpg" class="imagenes">
       </div>
-      <div class="">
-        <span>&times;</span>
-        <img src="images/panda3.jpg" alt="">
+      <div class="xImagen col-xs-2 thumbnail">
+        <span class="cerrar">&times;</span>
+        <img src="images/panda3.jpg" class="imagenes">
       </div>
-      <div class="">
-        <span>&times;</span>
-        <img src="images/panda4.jpg" alt="">
+      <div class="xImagen col-xs-2 thumbnail">
+        <span class="cerrar">&times;</span>
+        <img src="images/panda4.jpg" class="imagenes">
       </div>
 
-    </section class="conteiner">
-    <section class="botones">
-      <button class="boton" type="button" name="button">Origen</button>
-      <button class="boton" type="button" name="button">Extincion</button>
-      <button class="boton" type="button" name="button">Restaurar Fotos</button>
     </section>
-    <section class="conteiner">
-      <p>Miden unos 150cm de largo, más unos 10-15cm de cola.
-Un panda adulto puede llegar a pesar hasta 150 kg, siendo los machos un 10% mayores y un 20% más pesados que las hembras.
-Poseen un pelaje blanco con partes negras alrededor de los ojos, en las orejas, hocico, hombros y extremidades.
-Tienen unos molares anchos y planos así como una estructura ósea de la muñeca reforzada que, junto con el pulgar, le ayudan a sostener, romper y comer el bambú.
-Están clasificados como osos, ya que poseen el sistema digestivo de un carnívoro, pero cuyo organismo ha sido adaptado a una dieta vegetariana.</p>
-      <p>Acaba de descender de “En peligro” a “Vulnerable” (datos de la UICN).
-La Unión Internacional para la Conservación de la Naturaleza (UICN) ha cambiado en 2016 el estado de la amenaza debido al 17% de aumento de población en la década anterior a 2014, cuando un censo reveló que había 1.864 pandas en libertad en China. Hoy podemos hablar de más de 2.000 viviendo en estado salvaje.
-La "Lista Roja de especies amenazadas", elaborada por la UICN (Unión Internacional de Conservación de la Naturaleza), nos permite conocer el estado de la amenaza de las especies de animales y plantas en el mundo.
-</p>
+    <section id="almacenBotones" class="botones row">
+      <button class="boton origen col-lg-4" id="elOrigen"type="button" name="button">Origen</button>
+      <button class="boton extincion col-lg-4"id="extinguiedo" type="button" name="button">Extincion</button>
+      <button class="boton restaurar col-lg-4" id="restaurando" type="button" name="button">Restaurar Fotos</button>
+    </section>
+    <section id="almacenTexto"class="conteiner row">
+      <p class="texto col-xs-2 col-lg-6" id="texto1">Miden unos 150cm de largo, más unos 10-15cm de cola.
+       Un panda adulto puede llegar a pesar hasta 150 kg, siendo los machos un 10% mayores y un 20% más pesados que las hembras.
+       Poseen un pelaje blanco con partes negras alrededor de los ojos, en las orejas, hocico, hombros y extremidades.
+       Tienen unos molares anchos y planos así como una estructura ósea de la muñeca reforzada que, junto con el pulgar, le ayudan a sostener, romper y comer el bambú.
+       Están clasificados como osos, ya que poseen el sistema digestivo de un carnívoro, pero cuyo organismo ha sido adaptado a una dieta vegetariana.</p>
+      <p class="texto texto2 col-xs-2 col-lg-6" id="texto2">Acaba de descender de “En peligro” a “Vulnerable” (datos de la UICN).
+      La Unión Internacional para la Conservación de la Naturaleza (UICN) ha cambiado en 2016 el estado de la amenaza debido al 17% de aumento de población en la década anterior a 2014, cuando un censo reveló que había 1.864 pandas en libertad en China. Hoy podemos hablar de más de 2.000 viviendo en estado salvaje.
+      La "Lista Roja de especies amenazadas", elaborada por la UICN (Unión Internacional de Conservación de la Naturaleza), nos permite conocer el estado de la amenaza de las especies de animales y plantas en el mundo.
+    </p>
    </section>
    <footer>
      <img class="imagen" src="images/chicasDelCoro.jpeg" alt="">
    </footer>
 
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js2/main.js"></script>
   </body>
 </html>
